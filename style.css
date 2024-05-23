@@ -1,0 +1,99 @@
+@font-face {
+  font-display: swap;
+  font-family: "Varela";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/varela-v16-latin-regular.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Varela", sans-serif;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/mountain.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.hidden {
+  display: none;
+}
+.btn {
+  border: 0;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Varela", sans-serif;
+  cursor: pointer;
+}
+.show-btn {
+  background-color: #474b4f;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #3a3d40;
+  }
+}
+.modal {
+  position: fixed;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.close__btn {
+  color: #000;
+}
+/* .fas {
+}
+.fa-close {
+} */
+.modal__body p {
+  font-size: 1.6rem;
+}
+.body__title {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}

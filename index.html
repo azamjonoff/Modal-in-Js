@@ -3,22 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+    <title>Javascript 5.2-dars</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <!-- HEADER START -->
-    <header class="header"></header>
-    <!-- HEADER END -->
+    <div class="wrapper">
+      <button class="btn show-btn" id="show-btn">Show Modal</button>
 
-    <!-- MAIN START -->
-    <main class="main"></main>
-    <!-- MAIN END -->
+      <!-- MODAL -->
+      <div class="modal hidden" id="modal">
+        <div class="modal__header">
+          <h3 class="header__title">I love Nature</h3>
+          <button class="btn close__btn" id="close__btn">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
 
-    <!-- FOOTER START -->
-    <footer class="footer"></footer>
-    <!-- FOOTER END -->
+        <div class="modal__body">
+          <h2 class="body__title">Modal title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odio
+            libero reiciendis eum consequuntur, illo ea voluptatem omnis, harum
+            sint cupiditate magnam, porro esse non rerum? Saepe ex, id placeat
+            maxime laudantium in est porro?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay hidden" id="overlay"></div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
